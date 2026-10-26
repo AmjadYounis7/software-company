@@ -1,116 +1,81 @@
-# NovaDev — Two-person Git & GitHub assignment
+# NovaDev — Software Company Landing Page
 
-A simple, responsive software company website built with HTML and CSS. No dependencies or build step. Open `index.html` in your browser.
+NovaDev is a clean, responsive landing page for a modern software development company. It introduces the brand, communicates its value proposition, and gives potential clients a direct way to get in touch.
 
-## Requirements
-- Header with a text logo and navigation.
-- Hero with heading, description, and working contact CTA.
-- Three services: web development, mobile applications, custom software.
-- Footer with an example email address and copyright.
+## Project Overview
 
-Replace the demo company name and email before using this for a real business.
+This project was created as a lightweight company website using only HTML and CSS. The design focuses on clear messaging, simple navigation, strong calls to action, and a professional green color palette.
 
-## Files
-- `index.html`: page structure and content.
-- `styles.css`: shared styles, section styles, and mobile layout.
-- `.github/pull_request_template.md`: review checklist.
+### What We Built
 
-## Divide the work
-| Contributor | Branch | Responsibility |
-| --- | --- | --- |
-| Teammate A | `feature/header-hero` | Header, navigation, hero, and corresponding CSS |
-| Teammate B | `feature/services-footer` | Three service cards, contact footer, and corresponding CSS |
+- A branded header with responsive navigation
+- A hero section with a clear headline and call-to-action button
+- A contact-focused footer with company information and quick links
+- Responsive layouts for desktop, tablet, and mobile screens
+- Hover and keyboard-focus states for better usability
+- Reduced-motion support for improved accessibility
 
-The included website is a finished reference. To demonstrate real collaboration, agree on meaningful changes or build these sections incrementally in your own repository. Each teammate should make and push their own commits; do not invent another person's contributions.
+## Technologies Used
 
-## 1. Create the shared repository (Teammate A)
-Create an empty GitHub repository named `software-company`, without a generated README. Invite Teammate B under Settings → Collaborators. In this project folder, run the following, replacing YOUR_USERNAME:
+- HTML5
+- CSS3
+- CSS Grid and Flexbox
+- Responsive media queries
 
-```bash
-git init
-git add .
-git commit -m "Add software company website starter"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/software-company.git
-git push -u origin main
+No frameworks, packages, or build tools are required.
+
+## Project Structure
+
+```text
+software-company/
+├── index.html    # Website structure and content
+├── styles.css    # Styling and responsive layouts
+└── README.md     # Project documentation
 ```
 
-If Git asks for your identity, configure your own name and email. Authenticate to GitHub when prompted; do not share passwords or access tokens.
+## Run Locally
 
-## 2. Start a feature branch
-Teammate A, from the existing project:
+1. Clone the repository:
 
-```bash
-git switch main
-git pull origin main
-git switch -c feature/header-hero
-```
+   ```bash
+   git clone https://github.com/AmjadYounis7/software-company.git
+   ```
 
-Teammate B, on their own computer, replaces YOUR_USERNAME with the repository owner's username:
+2. Open the project folder:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/software-company.git
-cd software-company
-git switch -c feature/services-footer
-```
+   ```bash
+   cd software-company
+   ```
 
-## 3. Edit, check, commit, push
-Make your assigned changes. Open the page and check desktop and mobile layouts. Each teammate runs:
+3. Open `index.html` in your browser.
 
-```bash
-git status
-git diff
-git add index.html styles.css
-git commit -m "Describe your actual section changes"
-```
+Because this is a static website, no installation or development server is needed.
 
-Teammate A pushes with:
+## Customization
 
-```bash
-git push -u origin feature/header-hero
-```
+Before using the website for a real company, update:
 
-Teammate B pushes with:
+- The company name and page content in `index.html`
+- The email address in the contact section
+- The navigation links to match the final page sections
+- Colors, spacing, and typography in `styles.css`
 
-```bash
-git push -u origin feature/services-footer
-```
+## What We Practiced
 
-## 4. Pull requests and review
-On GitHub, create a pull request from your branch into `main`. Explain the changes and request your teammate's review. Review the diff, test the page, leave useful feedback, and merge when ready. Merge one PR first, then update the second branch before merging it.
+While building NovaDev, we worked with semantic HTML, reusable CSS classes, responsive web design, Flexbox, Grid, interactive link states, and accessible navigation. We also organized the project so it can be easily maintained and published with GitHub Pages.
 
-To update your current feature branch:
+## Future Improvements
 
-```bash
-git fetch origin
-git merge origin/main
-```
+- Add a services section with individual service cards
+- Add an about or team section
+- Connect the contact area to a working form
+- Add project screenshots or a portfolio section
+- Deploy the website with GitHub Pages
 
-If a conflict occurs, open the affected file, combine the correct changes, and remove all conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`). Recheck the page, then run:
+## Authors
 
-```bash
-git add index.html styles.css
-git commit -m "Resolve conflicts with main"
-git push
-```
+Created as a collaborative software-company website project. By Rayan And Amjad.
 
-If Git merged automatically, no extra conflict-resolution commit is needed. Push the updated branch normally.
+## License
 
-## 5. Synchronize after merging
-Each teammate runs:
-
-```bash
-git switch main
-git pull origin main
-git log --oneline --graph --all
-```
-
-## Before submission
-- Confirm all four required sections appear.
-- Check navigation and the contact button.
-- Check a narrow phone viewport and a desktop viewport.
-- Tab through links to verify visible keyboard focus.
-- Submit the repository URL and both reviewed pull request links.
-- Confirm the history contains actual contributions from both teammates.
-
-This download does not create a GitHub repository or make contributions on behalf of either teammate.
+This project is available for educational and portfolio use.
